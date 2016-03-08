@@ -24,6 +24,22 @@ namespace classes
             Console.WriteLine($"Yum, I ate {food}");
         }
 
-  
+        public void GoToSleep()
+        {
+            Console.WriteLine("The panda is sleeping...");
+        }
+        public void WakeUp()
+        {
+            Console.WriteLine("The panda has awaken...");
+        }
+
+        public void GoToSleep()
+        {
+            Console.WriteLine("The panda is sleeping...");
+        }
+        public void WakeUp()
+        {
+            Console.WriteLine("The panda has awaken...");
+        }
     }
 }

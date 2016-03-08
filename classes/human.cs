@@ -24,6 +24,16 @@ namespace classes
                 Console.WriteLine($"Yum, I ate {pizza}");
         }
 
-      
+        public void GoToSleep()
+        {
+            Console.WriteLine("The human is sleeping...");
+        }
+        public void WakeUp()
+        {
+            Console.WriteLine("The human has awaken...");
+        }
+        
+
+
     }
 }
