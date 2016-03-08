@@ -9,7 +9,9 @@ namespace classes
     class robot
     {
         public string Name { get; set; }
-        public bool IsTerminator { get; set; }   
+        public bool IsTerminator { get; set; }
+        public bool IsAsleep { get; set; }
+
 
         public void DisplayName()
         {

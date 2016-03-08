@@ -9,6 +9,8 @@ namespace classes
     class Human
     {
         public string Name { get; set; }
+        public bool IsAsleep { get; set; } 
+        
 
         public void DisplayName()
         {

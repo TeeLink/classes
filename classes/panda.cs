@@ -8,8 +8,10 @@ namespace classes
 {
     class panda
     {
+        
         public string Name { get; set; }
 
+        
         public void DisplayName()
         {
             Console.WriteLine($"My name is {Name}.");
@@ -27,19 +29,17 @@ namespace classes
         public void GoToSleep()
         {
             Console.WriteLine("The panda is sleeping...");
+
         }
         public void WakeUp()
         {
             Console.WriteLine("The panda has awaken...");
         }
 
-        public void GoToSleep()
-        {
-            Console.WriteLine("The panda is sleeping...");
-        }
-        public void WakeUp()
-        {
-            Console.WriteLine("The panda has awaken...");
-        }
+        
+        
+
+
+
     }
 }
