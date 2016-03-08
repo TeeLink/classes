@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace classes
 {
-    class Human
+    class Human : HasName
     {
         public string Name { get; set; }
         public bool IsAsleep { get; set; }
@@ -33,11 +33,11 @@ namespace classes
 
         public void GoToSleep()
         {
-            Console.WriteLine("The human is sleeping...");
+            Console.WriteLine("is sleeping...");
         }
         public void WakeUp()
         {
-            Console.WriteLine("The human has awaken...");
+            Console.WriteLine("has awaken...");
         }
         
 

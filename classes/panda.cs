@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace classes
 {
-    class Panda
+    class Panda : HasName
     {
-        
+
         public string Name { get; set; }
+
 
         public Panda (string Name)
         {

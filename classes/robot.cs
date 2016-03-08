@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace classes
 {
-    class Robot
+    class Robot : HasName  
     {
         public string Name { get; set; }
         public bool IsTerminator { get; set; }
