@@ -9,6 +9,7 @@ namespace classes
     class robot
     {
         public string Name { get; set; }
+        public bool IsTerminator { get; set; }   
 
         public void DisplayName()
         {
@@ -28,5 +29,6 @@ namespace classes
         {
             Console.WriteLine("ShutDown...");
         }
+
     }
 }
