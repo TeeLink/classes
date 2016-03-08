@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 
 namespace classes
 {
-    class panda
+    class Panda
     {
         
         public string Name { get; set; }
+
+        public Panda (string Name)
+        {
+            this.Name = Name;
+        }
 
         
         public void DisplayName()

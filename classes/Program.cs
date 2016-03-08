@@ -10,6 +10,14 @@ namespace classes
     {
         static void Main(string[] args)
         {
+            Human h = new Human("Rob");
+            Console.WriteLine($"My name is {h.Name}.");
+
+            Robot r = new Robot("SMSO-S515");
+            Console.WriteLine($"My designation is {r.Name}.");
+
+            Panda p = new Panda("Ettore");
+            Console.WriteLine($"My name is {p.Name}.");
         }
     }
 }
