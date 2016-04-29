@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace classes
 {
-    class Robot : HasName  
+    class Robot : IHasName  
     {
         public string Name { get; set; }
         public bool IsTerminator { get; set; }
 
-        public Robot (string Name)
+        public Robot (string name)
         {
-            this.Name = Name;
+            this.Name = name;
         }
 
         public void DisplayName()

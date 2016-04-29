@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace classes
 {
-    interface Interface1
+    public abstract class Mammal
     {
+        public abstract void Bathe();
+        public abstract void Play();
     }
 }

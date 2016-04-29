@@ -6,16 +6,25 @@ using System.Threading.Tasks;
 
 namespace classes
 {
-    class Human : HasName
+    class Human : Mammal, IHasName
     {
         public string Name { get; set; }
         public bool IsAsleep { get; set; }
-        
-        public Human (string Name)
+
+        public Human(string name)
         {
-            this.Name = Name;
-        } 
-        
+            this.Name = name;
+        }
+
+        public override void Bathe()
+        {
+            Console.WriteLine($"{Name} bathes in the tub.");
+        }
+
+        public override void Play()
+        {
+            Console.WriteLine($"{Name} play in the gym.");
+        }
 
         public void DisplayName()
         {
@@ -26,21 +35,26 @@ namespace classes
         {
             Console.WriteLine("Greetings!");
         }
-        public void Eat (string pizza)
+
+        public void Eat(string pizza)
         {
-                Console.WriteLine($"Yum, I ate {pizza}");
+            Console.WriteLine($"Yum, I ate {pizza}");
         }
 
         public void GoToSleep()
         {
             Console.WriteLine("is sleeping...");
         }
+
         public void WakeUp()
         {
             Console.WriteLine("has awaken...");
+
         }
-        
-
-
     }
 }
+
+
+
+
+

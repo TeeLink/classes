@@ -6,18 +6,27 @@ using System.Threading.Tasks;
 
 namespace classes
 {
-    class Panda : HasName
+    class Panda : Mammal, IHasName
     {
 
         public string Name { get; set; }
 
 
-        public Panda (string Name)
+        public Panda (string name)
         {
-            this.Name = Name;
+            this.Name = name;
         }
 
-        
+        public override void Bathe()
+        {
+            Console.WriteLine($"{Name} bathes in the pond.");
+        }
+
+        public override void Play()
+        {
+            Console.WriteLine($"{Name} play in the forrest.");
+        }
+
         public void DisplayName()
         {
             Console.WriteLine($"My name is {Name}.");
@@ -46,6 +55,6 @@ namespace classes
         
 
 
-
+        
     }
 }

@@ -18,6 +18,10 @@ namespace classes
 
             Panda p = new Panda("Ettore");
             Console.WriteLine($"My name is {p.Name}.");
+
+            Console.ReadLine();
         }
     }
+
+   
 }

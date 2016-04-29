@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace classes
 {
-    interface HasName
+    interface IHasName
     {
-       string Name { get; set; }
+        string Name { get; set; }
     }
 }
